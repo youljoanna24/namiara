@@ -1,0 +1,2 @@
+document.querySelector('.menu-toggle')?.addEventListener('click',()=>{const s=document.querySelector('.sidebar');const b=document.querySelector('.menu-toggle');s.classList.toggle('open');b.setAttribute('aria-expanded',s.classList.contains('open')?'true':'false')});
+document.querySelector('#character-search')?.addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();document.querySelectorAll('.character-card').forEach(c=>{c.hidden=!c.innerText.toLowerCase().includes(q)})});
